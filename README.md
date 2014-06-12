@@ -5,7 +5,7 @@ vectoR
 
 Some simple utilities for working with vector images.
 
-This package is deliberately extremely simple.  It might be easiest (especially given the package is not on CRAN and may never go on CRAN) to directly include the single source file `R/vector.R` in your project.  If you do that, you probably will want to comment the `##' @export` roxygen tags and/or rename the functions to avoid conflicts.
+This package is deliberately extremely simple.  It might be easiest (especially given the package is not on CRAN and may never go on CRAN) to directly include the source files `R/vector_read.R` and `R/util.R` in your project.  If you do that, you probably will want to comment the `##' @export` roxygen tags and/or rename the functions to avoid conflicts.
 
 ## Why is this package needed?
 
