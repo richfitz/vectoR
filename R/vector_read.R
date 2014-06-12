@@ -10,18 +10,17 @@
 ##' \enumerate{
 ##'   \item{Convert SVG to EPS.  This can be done with Inkscape
 ##'     automatically, or with other programs manually.  The fucntion
-##'     \code{forest:::inkscape_svg_to_eps} function does this step,
+##'     \code{vectoR:::inkscape_svg_to_eps} function does this step,
 ##'     but requires Inkscape to be installed.}
 ##'   \item{Convert EPS to XML. \code{grImport::readPicture} has an
 ##'     internal XML format that it uses, called RGML.  To convert to
 ##'     this format, it uses ghostscript to process the EPS file and
 ##'     then does some post-processing.  The function
-##'     \code{forest:::ghostscript_eps_to_xml} does this step, but
+##'     \code{vectoR:::ghostscript_eps_to_xml} does this step, but
 ##'     requires ghostscript to be installed.}
 ##'   \item{Read XML into R.  This is done with
 ##'     \code{grImport::readPicture} and creates an object of class
-##'     \code{Picture} that can be drawn using \code{grid.picture} and
-##'     eventuall some forest functions.}
+##'     \code{Picture} that can be drawn using \code{grid.picture}.}
 ##' }
 ##'
 ##' The function \code{vector_read} is a high level wrapper to this

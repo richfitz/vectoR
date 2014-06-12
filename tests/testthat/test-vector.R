@@ -11,7 +11,7 @@ test_that("SVG -> EPS conversion", {
   copy_from_pkg("extdata/fish.svg", path)
 
   # TODO: Generates noise on OS X - swallow that somehow.
-  forest:::inkscape_svg_to_eps(file.path(path, file.svg),
+  vectoR:::inkscape_svg_to_eps(file.path(path, file.svg),
                                file.path(path, file.eps))
   expect_that(file.exists(file.path(path, file.eps)), is_true())
 
@@ -28,7 +28,7 @@ test_that("SVG -> EPS conversion", {
 test_that("EPS -> XML conversion", {
   copy_from_pkg("extdata/fish.eps", path)
 
-  forest:::ghostscript_eps_to_xml(file.path(path, file.eps),
+  vectoR:::ghostscript_eps_to_xml(file.path(path, file.eps),
                                   file.path(path, file.xml))
   expect_that(file.exists(file.path(path, file.xml)), is_true())
 
